@@ -15,10 +15,11 @@ import warnings
 warnings.filterwarnings("ignore")                              # 성가신 warning을 꺼준다.
 
 # # # 나눔글꼴 경로 설정
-font_path = pd.read_json('NanumGothic.ttf')
+# font_path = 'NanumGothic.ttf'
 # font_path ='c:\\Users\\302-05\\AppData\\Local\\Microsoft\\Windows\\Fonts\\NanumGothic.ttf'
 # # 폰트 이름 가져오기
-font_name = fm.FontProperties(fname=font_path).get_name()
+# font_name = fm.FontProperties(fname=font_path).get_name()
+font_name = fm.FontProperties('NanumGothic.ttf')
 # 폰트 설정
 plt.rc('font', family=font_name)
 # print(matplotlib.get_cachedir())
