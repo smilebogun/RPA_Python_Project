@@ -14,14 +14,15 @@ from sklearn.linear_model import LinearRegression              # 선형회귀 �
 import warnings
 warnings.filterwarnings("ignore")                              # 성가신 warning을 꺼준다.
 
-# # 나눔글꼴 경로 설정
-font_path ='c:\\Users\\302-05\\AppData\\Local\\Microsoft\\Windows\\Fonts\\NanumGothic.ttf'
+# # # 나눔글꼴 경로 설정
+# # font_path ='c:\\Users\\302-05\\AppData\\Local\\Microsoft\\Windows\\Fonts\\NanumGothic.ttf'
 # font_path ='NanumGothic.ttf'
-# # 폰트 이름 가져오기
-font_name = fm.FontProperties(fname=font_path).get_name()
-# 폰트 설정
-plt.rc('font', family=font_name)
-# print(matplotlib.get_cachedir())
+# # # 폰트 이름 가져오기
+# font_name = fm.FontProperties(fname=font_path).get_name()
+# # 폰트 설정
+# plt.rc('font', family=font_name)
+# # print(matplotlib.get_cachedir())
+plt.rcParams['font.family'] = 'NanumGothic'
 
 df = pd.read_excel('0200.환율CodeTable.xlsm', sheet_name=['일일환율', '최근20일환율'], index_col=0)
 df1 = df['일일환율']
