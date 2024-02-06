@@ -15,8 +15,8 @@ import warnings
 warnings.filterwarnings("ignore")                              # 성가신 warning을 꺼준다.
 
 # # 나눔글꼴 경로 설정
-# font_path ='c:\\Users\\302-05\\AppData\\Local\\Microsoft\\Windows\\Fonts\\NanumGothic.ttf'
-font_path ='NanumGothic.ttf'
+font_path ='c:\\Users\\302-05\\AppData\\Local\\Microsoft\\Windows\\Fonts\\NanumGothic.ttf'
+# font_path ='NanumGothic.ttf'
 # # 폰트 이름 가져오기
 font_name = fm.FontProperties(fname=font_path).get_name()
 # 폰트 설정
