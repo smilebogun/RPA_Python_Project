@@ -19,11 +19,11 @@ warnings.filterwarnings("ignore")                              # 성가신 warni
 # font_path ='c:\\Users\\302-05\\AppData\\Local\\Microsoft\\Windows\\Fonts\\NanumGothic.ttf'
 # # 폰트 이름 가져오기
 # font_name = fm.FontProperties(fname=font_path).get_name()
-font_name = fm.FontProperties('NanumGothic.ttf')
+# font_name = fm.FontProperties('NanumGothic.ttf')
 # 폰트 설정
-plt.rc('font', family=font_name)
+# plt.rc('font', family=font_name)
 # print(matplotlib.get_cachedir())
-plt.rcParams['font.family'] = 'NanumGothic'
+# plt.rcParams['font.family'] = 'NanumGothic'
 # plt.rcParams['font.family'] = 'Malgun Gothic'
 # font_list = [font.name for font in fm.fontManager.ttflist]
 # print(font_list)
